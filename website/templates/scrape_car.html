@@ -1,0 +1,19 @@
+{%extends "index.html"%}
+{%block title%}Home{%endblock%}
+{%block content%}
+    <h3>{{name}} image</h3>
+    
+    <img src="{{img}}">
+    <!--
+    <ul>
+        {%for i in img%}
+            <li><img src="{{i}}"></li>
+        {%endfor%}
+    </ul>
+    -->
+    <form action="/carImage" method="POST">
+        <p>
+            <input type="submit" value="View the modified pictures">
+        </p>
+    </form>
+{%endblock%}
